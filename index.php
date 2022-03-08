@@ -13,7 +13,7 @@
 
     <div class="sidebar">
     <h1>
-        Hola mamacita
+        bustronome
     </h1>
 	<h1>
 		Pedro miguel pauleta
