@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola test</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" >
+   
+    <title>Paris | Bustronome | Restaurant gastronomique original à Paris & Londres</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
    
@@ -18,10 +20,75 @@
        <div class="logo">
        
            <div class="logo_name">  <h1> <i class='bx bx-star'></i> Bustronome  <i class='bx bx-star'></i> </h1>  </div>
-           <i class='bx bx-menu' ></i>
+         
        </div>
-
+       <i class='bx bx-menu'  id="btn"></i>
         </div>
+        <ul class="nav">
+            <li class="solou" id="golden">
+            <a href="#" class="binks" >
+                <span class="list_name"> Réservez Maintenant </span>
+            </a>
+            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+            </li>
+            <li class="solou">
+            <a href="# " class="binks">
+                <span class="list_name"><i class='bx bx-star'></i> Carte Cadeau <i class='bx bx-star'></i></span>
+            </a>
+            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+            </li>
+            <li class="solou">
+            <a href="#" class="binks">
+                <span class="list_name"> Les offres </span>
+            </a>
+            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+            </li>
+            <li class="solou">
+            <a href="#" class="binks">
+                <span class="list_name"> Le concept </span>
+            </a>
+            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+            </li>
+            <li class="solou">
+            <a href="#" class="binks">
+                <span class="list_name"> Privatisation </span>
+            </a>
+            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+            </li>
+            <li class="solou">
+            <a href="#" class="binks">
+                <span class="list_name"> Actualités du bus </span>
+            </a>
+            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+            </li>
+            <li class="solou">
+            <a href="#" class="binks">
+                <span class="list_name"> le blog </span>
+            </a>
+            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+            </li>
+            <li class="solou">
+            <a href="#" class="binks">
+                <span class="list_name"> Photos et videos </span>
+            </a>
+            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+            </li>
+            <li class="solou">
+            <a href="#" class="binks">
+                <span class="list_name"> Questions fréquentes </span>
+            </a>
+            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+            </li>
+            <li class="solou" >
+            <a href="#" class="binks">
+                <span class="list_name"> Contactez le Bustronome Paris </span>
+            </a>
+            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+            </li>
+         
+         
+
+        </ul>
 
     </div>
     <div class="Footer">
