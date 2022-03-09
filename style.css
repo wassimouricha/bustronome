@@ -235,7 +235,7 @@ position: relative;
     top: 80px;
     left: 300px;
     position: absolute;
-    background-color: #1a1a1a;
+   
     font-size: 15px;
     z-index: 100;
 }
@@ -243,16 +243,14 @@ position: relative;
 /* carousel */
 
 .carousel{
-    height: 800px;
-    width: 800px;
+  
     z-index: 500;
    
 }
 
 .carousel img{
-    display: block;
-    height: 100%;
-    width: 100%;
+    display: flex;
+    
 }
 
 .carousel_item{
@@ -305,6 +303,11 @@ position: relative;
 }
 
 .container{
-    width: 50%;
+    display: flex;
+    position: absolute;
+    left: 280px;
+    top: 0;
+  
     margin-inline: auto;
+    z-index: -1;
 }
