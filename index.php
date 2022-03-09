@@ -13,82 +13,104 @@
 </head>
 <body class="main">
 
-<img src="./assets/logo2.png" alt="">
+
 
     <div class="sidebar">
+        <img src="./assets/logo2.png" alt="logo bustronome" class="imagelogo">
         <div class="logo_container">
-       <div class="logo">
+       <!-- <div class="logo">
        
            <div class="logo_name">  <h1> <i class='bx bx-star'></i> Bustronome  <i class='bx bx-star'></i> </h1>  </div>
          
        </div>
-       <i class='bx bx-menu'  id="btn"></i>
+       <i class='bx bx-menu'  id="btn"></i> -->
         </div>
         <ul class="nav">
             <li class="solou" id="golden">
-            <a href="#" class="binks" >
+            <a href="#" class="binks" id="blackus" >
                 <span class="list_name"> Réservez Maintenant </span>
             </a>
-            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+        
             </li>
             <li class="solou">
             <a href="# " class="binks">
                 <span class="list_name"><i class='bx bx-star'></i> Carte Cadeau <i class='bx bx-star'></i></span>
             </a>
-            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+        
             </li>
             <li class="solou">
             <a href="#" class="binks">
                 <span class="list_name"> Les offres </span>
             </a>
-            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+     
             </li>
             <li class="solou">
             <a href="#" class="binks">
                 <span class="list_name"> Le concept </span>
             </a>
-            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+          
             </li>
             <li class="solou">
             <a href="#" class="binks">
                 <span class="list_name"> Privatisation </span>
             </a>
-            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+           
             </li>
             <li class="solou">
             <a href="#" class="binks">
                 <span class="list_name"> Actualités du bus </span>
             </a>
-            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+         
             </li>
             <li class="solou">
             <a href="#" class="binks">
                 <span class="list_name"> le blog </span>
             </a>
-            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+          
             </li>
             <li class="solou">
             <a href="#" class="binks">
                 <span class="list_name"> Photos et videos </span>
             </a>
-            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+      
             </li>
             <li class="solou">
             <a href="#" class="binks">
                 <span class="list_name"> Questions fréquentes </span>
             </a>
-            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+      
             </li>
             <li class="solou" >
             <a href="#" class="binks">
                 <span class="list_name"> Contactez le Bustronome Paris </span>
             </a>
-            <!-- <span class="tooltip"> Réservez Maintenant </span> -->
+           
             </li>
          
          
 
         </ul>
+      
+        <div class="footer_side" >
+            <div class="iconus">
+                <i class='bx bxs-map'></i>
+            </div>
+            <ul class="titrou">
+                <li>
+                    <span>ARC DE TRIOMPHE</span>     
+                </li>
+                <li>
+                    <a href="#" class="angle">angle avenue kleber</a>
+
+                </li>
+                
+            </ul>
+            <ul>
+            
+            </ul>
+            </div>
+            
+       
 
     </div>
     <div class="Footer">

@@ -1,13 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 body{
     color: white;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
 
 
-
-.main{
-    background-color: #1a1a1a;
-}
 
 .solou{
     list-style: none;
@@ -17,9 +25,95 @@ body{
 
 #golden{
     background-color: #a09173;
+   
+   
+}
+
+#blackus{
+    color: #1a1a1a;
 }
 
 .binks{
     text-decoration: none;
     color: white;
+}
+
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    height: 100%;
+    width: 300px ;
+    top: 0;
+    left: 0;
+   
+}
+
+.imagelogo{
+    display: flex;
+   text-align: center;
+    margin: 0 auto;
+   height: 120px;
+   width: 180px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul{
+text-align: center;
+margin-top: 20px;
+
+}
+
+.sidebar ul li{ 
+    
+    height: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: 0.4s all ease-in-out linear;
+}
+
+.sidebar ul li a:hover{
+    background: #a09173;
+}
+
+.footer_side ul {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  
+}
+
+.footer_side ul li a:hover{
+    background: #1a1a1a;
+}
+
+.footer_side{
+    margin-top: auto;
+}
+
+
+.angle{
+    color: #a09173;
+    margin: 0;
+    padding: 0;
+}
+
+.titrou{
+    padding-bottom: 0;
+}
+
+.iconus{
+    color: #a09173;
+  font-size: 50px;
+  position: absolute;
 }
