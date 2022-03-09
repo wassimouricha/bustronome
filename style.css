@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  
 }
 
 
@@ -16,7 +21,7 @@ body{
 
 
 
-
+/* Sidebar */
 .solou{
     list-style: none;
     text-decoration: none;
@@ -43,11 +48,12 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #1a1a1a;
-    height: 100%;
-    width: 300px ;
+    height: 92%;
+    width: 280px ;
     top: 0;
     left: 0;
-   
+  
+    
 }
 
 .imagelogo{
@@ -116,4 +122,87 @@ margin-top: 20px;
     color: #a09173;
   font-size: 50px;
   position: absolute;
+}
+
+
+/* footer */
+
+#goldus{
+    color: #a09173;
+}
+.footeurs{
+   
+    padding: 20px 0;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: row;
+   
+    
+
+}
+
+ .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: grey;
+}
+
+ .social  {
+    font-size: 24px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    transition:  0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+ .social :hover{
+    opacity: 0.9;
+    color: #a09173;
+}
+
+.footeurs ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    
+}
+
+.coco {
+    text-decoration: none;
+    color: #a09173;
+}
+
+#meme{
+    color: #a09173;
+}
+
+#momo{
+    color: grey;
+}
+
+.footeurs ul a{
+    text-decoration: none;
+    opacity: 0.8;
+    
+}
+
+.footeurs ul li {
+    display: inline-block;  
+    padding: 0 15px;
+}
+
+.mamu{
+    display: flex;
+    justify-content: end;
+    font-size: 10px;
+   
+    
 }

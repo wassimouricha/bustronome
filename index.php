@@ -100,7 +100,7 @@
                     <span>ARC DE TRIOMPHE</span>     
                 </li>
                 <li>
-                    <a href="#" class="angle">angle avenue kleber</a>
+                    <a href="https://www.google.com/maps/place/Bustronome+-+Paris.+Restaurant-bus/@48.872752,2.294031,15z/data=!4m5!3m4!1s0x0:0x2b80095c2d0654ca!8m2!3d48.872752!4d2.294031" target="_blank" class="angle">angle avenue kleber</a>
 
                 </li>
                 
@@ -113,9 +113,42 @@
        
 
     </div>
-    <div class="Footer">
+    
+    
+        <section class="footeurs">
+            <div class="listes">
+           
+                <ul>
+                    <li>
+                        <a href="#"  id="momo" >FR</a>   <span>| </span> <a href="#" id="goldus" >EN</a>
+                    </li>
 
-    </div>
+                    <li>
+                        <a href="#" ><i class='bx bxs-phone' id="meme"></i></a> <a href=""  id="momo"> +33 (0) 954 444 555</a>
+                    </li>
+
+                    <li>
+                        <a href="#" ><i class='bx bx-mail-send' id="meme"></i></a> <a href="CONTACT@BUSTRONOME.COM" id="goldus" >CONTACT@BUSTRONOME.COM</a>
+                    </li>
+
+                    <li>
+                    <a href="https://www.facebook.com/bustronome/" target="_blank" class="social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://plus.google.com/u/0/+Bustronome-Voyage-Gourmand-Paris" target="_blank" class="social"><i class='bx bxl-google-plus' ></i></a>
+                    <a href="https://www.instagram.com/bustronomeparis/" target="_blank" class="social"><i class='bx bxl-instagram' ></i></a>
+                </li>
+
+                <li class="mamu">  
+                    <span > © 2017 BUSTRONOME.</span> <a href="#"  class="coco">MENTIONS LÉGALES.</a><span > RÉALISATION </span>
+                </li>
+                       
+ 
+                </ul>
+            
+                 </div>
+
+           
+        </section>
+    
    
 </body>
 </html>
