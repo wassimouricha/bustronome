@@ -242,3 +242,69 @@ position: relative;
 
 /* carousel */
 
+.carousel{
+    height: 800px;
+    width: 800px;
+    z-index: 500;
+   
+}
+
+.carousel img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel_item{
+    position: relative;
+    float: left;
+    display: none;
+    width: 100%;
+    margin-right: -100%;
+}
+
+.carousel_inner{
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel_inner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.carousel_item_active,
+.carousel_item_pos_next{
+    display: block;
+}
+
+.carousel_item_pos_next{
+    left: 100%;
+}
+
+.carousel_fade .carousel_item_pos_next{
+    left: 0 ;
+    opacity: 0;
+}
+
+.carousel_fade .carousel_item_next{
+    transform: none;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+}
+
+.carousel_fade .carousel_item_active .carousel_item_next{
+    opacity: 0;
+}
+
+
+.carousel_item_next{
+    transform: translateX(-100%);
+    transition: transform .5s ease-in-out;
+}
+
+.container{
+    width: 50%;
+    margin-inline: auto;
+}
