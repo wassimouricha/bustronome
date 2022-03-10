@@ -243,14 +243,14 @@ position: relative;
 /* carousel */
 
 .carousel{
-  
+    display: flex;
     z-index: 500;
    
 }
 
 .carousel img{
-    display: flex;
-    
+  height: 900px;
+    width: 1623px;
 }
 
 .carousel_item{
