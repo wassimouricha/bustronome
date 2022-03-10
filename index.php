@@ -125,55 +125,22 @@
   
 
 <div class="container">
-        <!-- <div class="slider">
-          <img src="assets/3.-pave-de-cabillaud-choux-rave.jpg" alt="" class="carousel_img">
-        </div>
-        <div>
-            <img src="assets/Bustronome-47.jpg" alt="" class="carousel_img">
-        </div>
-            <div>
-                <img src="assets/Bustronome-91.jpg" alt="" class="carousel_img">
-            </div>
-         <div>
-            <img src="assets/Bustronome-HD-41.jpg" alt="" class="carousel_img">
-         </div>
-        -->
-       
 
-            <div class="slider fade">
-             
+            <div class="slider">
               <img src="assets/3.-pave-de-cabillaud-choux-rave.jpg" class="carousel_img">
-             
             </div>
             
-            <div class="slider fade">
-              
+            <div class="slider">
               <img src="assets/Bustronome-47.jpg" class="carousel_img">
-       
             </div>
             
-            <div class="slider fade">
-            
+            <div class="slider">
               <img src="assets/Bustronome-91.jpg" class="carousel_img">
-            
             </div>
 
-            <div class="slider fade">
-            
+            <div class="slider">
                 <img src="assets/Bustronome-HD-41.jpg" class="carousel_img">
-              
               </div>
-            
-         
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-       
-      
    
 </div>
 
@@ -181,12 +148,21 @@
             <div class="wrapper">
                 <form >
                      <select name="" id="selectus">
-                          <option value="" id="selectedus"> Paris</option>
-                          <option value=""> Londres</option>
+                          <option value="" id="selectedus"> PARIS</option>
+                          <option value=""> LONDRES</option>
                         </select>
                     </form>
             </div>
-            
+            <!-- Bulle card text -->
+            <div class="containercard">
+                <div>
+                    <h1>Laissez vos sens vous transportez</h1>
+                </div>
+                <div>
+                    <p> A bord du bustronome , les passagers découvrent les plus belles vues de Paris en profitant du meilleur de la gastronomie</p>
+                </div>
+
+            </div>
     
    <!-- footer -->
     <section class="pupo">
