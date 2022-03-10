@@ -154,7 +154,7 @@
             
             <div class="listes">
            
-                <ul>
+                <ul class="tailleliste">
                     <li>
                         <a href="#"  id="momo" >FR</a>   <span>| </span> <a href="#" id="goldus" >EN</a>
                     </li>

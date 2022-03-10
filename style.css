@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    overflow: hidden;
+
   
 }
 
@@ -17,7 +17,7 @@ body{
     position: relative;
     height: 100vh;
     width: 100%;
-    
+    overflow: hidden;
 
 }
 
@@ -50,7 +50,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #1a1a1a;
-    height: 92%;
+    height: 93%;
     width: 280px ;
     top: 0;
     left: 0;
@@ -143,24 +143,21 @@ margin-top: 20px;
 
 }
 
- .social {
-    text-align: center;
-    padding-bottom: 25px;
-    color: grey;
-}
+
 
  .social  {
-    font-size: 24px;
+    
+
+    font-size: 20px;
     color: white;
     width: 40px;
     height: 40px;
-    line-height: 38px;
     transition:  0.3s ease-in-out;
-    display: inline-block;
     text-align: center;
     border-radius: 50%;
     margin: 0 8px;
     opacity: 0.75;
+    text-align: center; 
 }
  .social :hover{
     opacity: 0.9;
@@ -168,13 +165,16 @@ margin-top: 20px;
 }
 
 .footeurs ul{
-    margin-top: 0;
+   
     padding: 0;
     list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
+    font-size: 12px;
     
+}
+
+.tailleliste{
+display: flex;
+flex-direction: row;
 }
 
 .coco {
@@ -226,6 +226,7 @@ margin-top: 20px;
 
 .pupo{
 position: relative;
+z-index: 10;
 }
 
 
