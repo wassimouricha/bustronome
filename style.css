@@ -200,22 +200,36 @@ margin-top: 20px;
     display: inline-block;  
     padding: 0 15px;
 }
-
-.droite{
+.containerfooterbasdroite{
     display: flex;
-    justify-content: end;
-    font-size: 10px;
+    flex-direction: column;
     margin-left:  auto;
     margin-right: 30px;
+}
+.droite{
+    display: flex;
+    font-size: 10px;
+   
  
     
 }
 
+.dessous{
+   
+        display: flex;
+        font-size: 10px;
+        text-align: right;
+        justify-content: end;
+     
+    
+}
 
 .pupo{
 position: relative;
 }
 
+
+ /* progress bar */
 #progress-bar{
  position: absolute;
  top: -8px;
@@ -314,45 +328,3 @@ position: relative;
 }
 
 /* le bouton paris londre */
-.containedbutton{
-    display: flex;
-    left: 1660px;
-    top: 40px;
-    width: 200px;
-    position: absolute;
-}
-
-.click{
-    background-color: #1a1a1ac2;
-}
-
-.click:hover {
-    
-}
-
-.click{
-    padding:12px ;
-    font-size: 1.2em;
-   
-    outline: none;
-    width: 200px;
-}
-
-.listbutton{
-    position:absolute ;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: 0.3s;
-}
-
-.newlist{
-    transform: scaleY(1);
-}
-
-.linksbutton{
-    padding:12px ;
-    font-size: 1.2em;
-   
-    outline: none;
-    width: 200px;
-}

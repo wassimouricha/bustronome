@@ -41,8 +41,3 @@ function getItemActiveIndex(){
 }
 
 //button paris londres
-let click = document.querySelector(".click");
-let list = document.querySelector(".listbutton");
-click.addEventListener("click",()=> {
-    list.classList.toggle("newlist")
-})

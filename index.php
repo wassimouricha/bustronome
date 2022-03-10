@@ -65,7 +65,7 @@
             </li>
             <li class="solou">
             <a href="#" class="binks">
-                <span class="list_name"> le blog </span>
+                <span class="list_name"> Le blog </span>
             </a>
           
             </li>
@@ -142,7 +142,9 @@
     </div>
 
 </div>
- 
+
+<!-- Boutton dropped down  -->
+
     
    <!-- footer -->
     <section class="pupo">
@@ -176,12 +178,20 @@
                 </ul>
             
                  </div>
-                 <div class="droite">
+                 <div class="containerfooterbasdroite">
+                    <div class="droite">
                
                         <span > © 2017 BUSTRONOME.</span> <a href="#"  class="coco">MENTIONS LÉGALES.</a><span > RÉALISATION </span>
-                
-                           
+      
                  </div>
+                 <div class="dessous">
+                    <span > Made with </span> <a href="#"  class="coco"> ♥ </a><span > by </span><a href="https://www.cosavostra.com/"   target="_blank" class="coco"> CosaVostra. </a>
+                </div>
+                 
+
+                 </div>
+                 
+      
 
            
         </section>
