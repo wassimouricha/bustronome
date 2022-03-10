@@ -16,7 +16,7 @@ body{
     color: white;
     position: relative;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
 
 }
@@ -54,6 +54,7 @@ body{
     width: 280px ;
     top: 0;
     left: 0;
+    
   
     
 }
@@ -138,7 +139,7 @@ margin-top: 20px;
     background-color: #1a1a1a;
     display: flex;
     flex-direction: row;
-   
+    
     
 
 }
@@ -258,74 +259,56 @@ z-index: 10;
 
 /* carousel */
 
-.carousel{
+ .carousel_img{
+    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/* Fading animation */
+
+.container{
+  
     display: flex;
-    z-index: 500;
+    position: fixed;
+    left: 280px;
+    top: 0;
+     height: 93%;
+    width: 100%; 
+    z-index: -1;
+    transition: ease-in-out;
    
 }
 
-.carousel img{
-  height: 900px;
-    width: 1640px;
-}
-
-.carousel_item{
-    position: relative;
-    float: left;
-    display: none;
-    width: 100%;
-    margin-right: -100%;
-}
-
-.carousel_inner{
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel_inner::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.carousel_item_active,
-.carousel_item_pos_next{
-    display: block;
-}
-
-.carousel_item_pos_next{
-    left: 100%;
-}
-
-.carousel_fade .carousel_item_pos_next{
-    left: 0 ;
-    opacity: 0;
-}
-
-.carousel_fade .carousel_item_next{
-    transform: none;
-    opacity: 1;
-    transition: opacity .5s ease-in-out;
-}
-
-.carousel_fade .carousel_item_active .carousel_item_next{
-    opacity: 0;
-}
-
-
-.carousel_item_next{
-    transform: translateX(-100%);
-    transition: transform .5s ease-in-out;
-}
-
-.container{
-    display: flex;
+.container > div{
     position: absolute;
-    left: 280px;
-    top: 0;
-  
-    margin-inline: auto;
-    z-index: -1;
+   
+
+
 }
+
+.slider{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+
 
 /* le bouton paris londre */
+.wrapper{
+    display: flex;
+    position: fixed;
+    top: 40px;
+ right: 20px;
+  
+}
+
+#selectus{
+    text-align: center;
+}
+

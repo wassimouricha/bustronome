@@ -8,8 +8,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" >
    
     <title>Paris | Bustronome | Restaurant gastronomique original à Paris & Londres</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
    
 </head>
 <body class="main">
@@ -120,31 +122,38 @@
       
     </div>
 
-    <!-- carousel -->
+  
 
-<div class="container carousel_fade">
+<div class="container">
 
-    <div class="carousel">
-        <div class="carousel_inner">
-            <div class="carousel_item carousel_item_active">
-                <img src="assets/3.-pave-de-cabillaud-choux-rave.jpg" alt="" class="carousel_img">
+            <div class="slider">
+              <img src="assets/3.-pave-de-cabillaud-choux-rave.jpg" class="carousel_img">
             </div>
-            <div class="carousel_item">
-                <img src="assets/Bustronome-47.jpg" alt="" class="carousel_img">
+            
+            <div class="slider">
+              <img src="assets/Bustronome-47.jpg" class="carousel_img">
             </div>
-            <div class="carousel_item">
-                <img src="assets/Bustronome-91.jpg" alt="" class="carousel_img">
+            
+            <div class="slider">
+              <img src="assets/Bustronome-91.jpg" class="carousel_img">
             </div>
-            <div class="carousel_item">
-                <img src="assets/Bustronome-HD-41.jpg" alt="" class="carousel_img">
-            </div>
-        </div>
-    </div>
 
+            <div class="slider">
+                <img src="assets/Bustronome-HD-41.jpg" class="carousel_img">
+              </div>
+   
 </div>
 
-<!-- Boutton dropped down  -->
-
+            <!-- Boutton dropped down  -->
+            <div class="wrapper">
+                <form >
+                     <select name="" id="selectus">
+                          <option value="" id="selectedus"> Paris</option>
+                          <option value=""> Londres</option>
+                        </select>
+                    </form>
+            </div>
+            
     
    <!-- footer -->
     <section class="pupo">
@@ -196,7 +205,7 @@
            
         </section>
     
-   
+
 
       <script src="./script.js"></script>
 </body>
