@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    overflow: hidden;
   
 }
 
@@ -250,7 +251,7 @@ position: relative;
 
 .carousel img{
   height: 900px;
-    width: 1623px;
+    width: 1640px;
 }
 
 .carousel_item{
@@ -310,4 +311,48 @@ position: relative;
   
     margin-inline: auto;
     z-index: -1;
+}
+
+/* le bouton paris londre */
+.containedbutton{
+    display: flex;
+    left: 1660px;
+    top: 40px;
+    width: 200px;
+    position: absolute;
+}
+
+.click{
+    background-color: #1a1a1ac2;
+}
+
+.click:hover {
+    
+}
+
+.click{
+    padding:12px ;
+    font-size: 1.2em;
+   
+    outline: none;
+    width: 200px;
+}
+
+.listbutton{
+    position:absolute ;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.newlist{
+    transform: scaleY(1);
+}
+
+.linksbutton{
+    padding:12px ;
+    font-size: 1.2em;
+   
+    outline: none;
+    width: 200px;
 }

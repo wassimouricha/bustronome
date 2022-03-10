@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" >
    
     <title>Paris | Bustronome | Restaurant gastronomique original à Paris & Londres</title>
@@ -14,7 +15,7 @@
 <body class="main">
 
 
-
+        <!-- sidebar -->
     <div class="sidebar">
         <img src="./assets/logo2.png" alt="logo bustronome" class="imagelogo">
         <div class="logo_container">
@@ -113,9 +114,42 @@
        
 
     </div>
+
+    <div class="motflottantsolo">
+        <h1>Un Restaurant original à bord d'un bus à impériale: vivez une expérience inédite !</h1>
+      
+    </div>
+
+    <!-- carousel -->
+
+<div class="container carousel_fade">
+
+    <div class="carousel">
+        <div class="carousel_inner">
+            <div class="carousel_item carousel_item_active">
+                <img src="assets/3.-pave-de-cabillaud-choux-rave.jpg" alt="" class="carousel_img">
+            </div>
+            <div class="carousel_item">
+                <img src="assets/Bustronome-47.jpg" alt="" class="carousel_img">
+            </div>
+            <div class="carousel_item">
+                <img src="assets/Bustronome-91.jpg" alt="" class="carousel_img">
+            </div>
+            <div class="carousel_item">
+                <img src="assets/Bustronome-HD-41.jpg" alt="" class="carousel_img">
+            </div>
+        </div>
+    </div>
+
+</div>
+ 
     
-    
+   <!-- footer -->
+    <section class="pupo">
+        <div id="progress-bar"></div>  
+    </section>
         <section class="footeurs">
+            
             <div class="listes">
            
                 <ul>
@@ -137,18 +171,23 @@
                     <a href="https://www.instagram.com/bustronomeparis/" target="_blank" class="social"><i class='bx bxl-instagram' ></i></a>
                 </li>
 
-                <li class="mamu">  
-                    <span > © 2017 BUSTRONOME.</span> <a href="#"  class="coco">MENTIONS LÉGALES.</a><span > RÉALISATION </span>
-                </li>
-                       
+               
  
                 </ul>
             
+                 </div>
+                 <div class="droite">
+               
+                        <span > © 2017 BUSTRONOME.</span> <a href="#"  class="coco">MENTIONS LÉGALES.</a><span > RÉALISATION </span>
+                
+                           
                  </div>
 
            
         </section>
     
    
+
+      <script src="./script.js"></script>
 </body>
 </html>
