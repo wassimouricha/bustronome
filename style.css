@@ -349,14 +349,65 @@ z-index: 10;
 
 /* media queries */
 
-@media screen and (min-width: 1024px) {
-    .socialus{
-        
-    }
+@media screen and (max-width: 425px) {
+.motflottantsolo{display: none;}
+.container{display: none;}
+.wrapper{display: none;}
+.containercard{display: none!important;}
+.socialus{
+    display: block;
+  
+}
+.footeurs{
+    display: block;
+}
+body{
+    min-width: 300px;
+}
+.tailleliste{flex-direction: column;}
+.sidebar{
+    width: 100%;
+}
+.nav{
+
+}
 }
 
+
 @media screen and (min-width: 2560px) {
-    .nav{
-     top: 20px;
+    span{
+        font-size: 20px;
     }
+    .sidebar ul li a{
+        
+        margin-top: 75px;
+        font-size: 20px;
+    }
+     .containercard{
+         bottom: 138px;
+     }
+
+     .angle{
+         margin-top: 0!important;
+     }
+
+     .social{
+         font-size: 40px;
+     }
+     #goldus{
+        font-size: 30px;
+     }
+     #momo{
+        font-size: 30px;
+     }
+     #meme{
+        font-size: 30px;
+     } 
+    .tailleliste span{
+        font-size: 30px; 
+     }
+     .list_name {
+         margin-top: -5px;
+         font-size: 25px;
+     }
 }
