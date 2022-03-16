@@ -15,7 +15,7 @@ $(".containercard > div:gt(0)").hide();  //script permettant l'animation des fad
 
 
 setInterval(function() { 
-  $('.containercard > div:first')
+  $('.containercard')
   .fadeOut(1000)
   .next()
   .fadeIn(1000)
