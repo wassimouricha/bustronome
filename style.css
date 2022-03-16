@@ -17,7 +17,7 @@ body{
     position: relative;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 
 }
 
@@ -349,7 +349,7 @@ z-index: 10;
 
 /* media queries */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
 .motflottantsolo{display: none;}
 .container{display: none;}
 .wrapper{display: none;}
@@ -360,6 +360,8 @@ z-index: 10;
 }
 .footeurs{
     display: block;
+   
+    text-align: center;
 }
 body{
     min-width: 300px;
@@ -368,7 +370,18 @@ body{
 .sidebar{
     width: 100%;
 }
-.nav{
+.dessous{
+    justify-content: center;
+}
+.droite{
+    justify-content: center;
+}
+.containerfooterbasdroite{
+    display: block;
+    text-align: center;
+}
+.footer_side{
+text-align: center;
 
 }
 }
