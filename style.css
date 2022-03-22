@@ -18,7 +18,7 @@ body{
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-
+    overflow-y: hidden;
 }
 
 
@@ -139,7 +139,7 @@ margin-top: 20px;
     background-color: #1a1a1a;
     display: flex;
     flex-direction: row;
-    
+    position: relative;
     
 
 }
@@ -365,6 +365,8 @@ z-index: 10;
 }
 body{
     min-width: 300px;
+    overflow-y: visible;
+    overflow-x: hidden;
 }
 .tailleliste{flex-direction: column;}
 .sidebar{
