@@ -33,7 +33,13 @@
             <a href="#" class="binks" id="blackus" >
                 <span class="list_name"> Réservez Maintenant </span>
             </a>
-        
+        </li>
+        <li class="solou">
+        <a href="# " class="binks">
+            <span class="list_name"><i class='bx bx-star'></i> Connexion <i class='bx bx-star'></i></span>
+        </a>
+    
+        </li>
             </li>
             <li class="solou">
             <a href="# " class="binks">
