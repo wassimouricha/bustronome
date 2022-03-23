@@ -1,19 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" >
-   
-    <title>Paris | Bustronome | Restaurant gastronomique original à Paris & Londres</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    
-   
-</head>
+
+<?php include 'includes/head.php' ; ?>
+
 <body class="main">
 
 
@@ -35,8 +24,8 @@
             </a>
         </li>
         <li class="solou">
-        <a href="# " class="binks">
-            <span class="list_name"><i class='bx bx-star'></i> Connexion <i class='bx bx-star'></i></span>
+        <a href="Page_de_connexion.html"  class="binks">
+            <span class="list_name" ><i class='bx bx-star'></i> Connexion <i class='bx bx-star'></i></span>
         </a>
     
         </li>
@@ -130,7 +119,7 @@
 
   
 
-<div class="container">
+<div class="containere">
 
             <div class="slider">
               <img src="assets/3.-pave-de-cabillaud-choux-rave.jpg" class="carousel_img">

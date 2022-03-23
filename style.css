@@ -45,6 +45,11 @@ body{
     color: white;
 }
 
+.motflottantsolo h1{
+    color: white;
+    font-size: 35px;
+    margin-top: 5px;
+}
 
 .sidebar{
     display: flex;
@@ -118,6 +123,7 @@ margin-top: 20px;
 
 .titrou{
     padding-bottom: 0;
+    color: white;
 }
 
 .iconus{
