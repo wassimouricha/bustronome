@@ -6,3 +6,19 @@ C :   le controlleur , il va controller toute les données , le controlleur va a
 
 -->
 
+
+<!-- ici le code on va l'inclure dans page_de_connexion -->
+<?php
+
+require ('actions/database.php') ;
+
+// je vais vérifier si l'utilisateur clique bien sur le bouton
+if(isset($_POST['validate'])){
+//  ici on va verifier si toutes les champs ne sont pas vides
+    if(!empty($_POST['pseudo']) AND !empty($_POST['lastname']) AND !empty($_POST['firstname']) AND !empty($_POST['password']) ){
+
+    }else{
+        $errorMsg = " Veuillez compléter tous les champs....";
+    }
+
+}

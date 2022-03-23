@@ -1,6 +1,6 @@
 <div class="containere">
         
-           
+           <?php
 
         <form class="container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                 <div class="mb-3">
@@ -10,7 +10,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nom</label>
-                    <input type="text" class="form-control" name="alstname">
+                    <input type="text" class="form-control" name="lastname">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Prénom</label>
