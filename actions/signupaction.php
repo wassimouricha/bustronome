@@ -20,7 +20,18 @@ if(isset($_POST['validate'])){
         $user_pseudo = htmlspecialchars($_POST['pseudo']);
         $user_lastname = htmlspecialchars($_POST['lastname']);
         $user_firstname = htmlspecialchars($_POST['firstname']);
-        $user_password = htmlspecialchars($_POST['password']);
+        $user_password = password_hash($_POST['password'], PASSWORD_DEFAULT);  //j'indique avec password hash que je vais crypter le mot de passe, 
+        //il prend deux parametres le champs de base de donnée password et ensuite le type de cryptage
+
+        $checkIfUserAlreadyExists = $bdd ->prepare('SELECT pseudo FROM users WHERE pseudo = ?');  // je ais une requete sql pour récuperer les données qui se trouve dans la table
+        // je déclare donc ici que je veux récuperer toutes les données (avec l'étoile *) ou le pseudo dans la base de données users qui possède déjà le pseudo en questions 
+        $checkIfUserAlreadyExists->execute(array($user_pseudo));
+
+        if($checkIfUserAlreadyExists->rowCount() == 0){
+            //code... et message d erreur
+        }else{
+            $errorMsg = " Veuillez compléter tous les champs....";
+        }
 
     }else{
         $errorMsg = " Veuillez compléter tous les champs....";
