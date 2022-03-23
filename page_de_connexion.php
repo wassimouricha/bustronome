@@ -10,12 +10,8 @@
 
             <!-- sidebar -->
             <?php include 'includes/sidebar.php' ; ?>
-            <!-- Mot flottant -->
-            <?php include 'includes/motflottant.php' ; ?>
-            <!-- automatic carousel slider -->
+            <!-- formulaire -->
             <?php include 'includes/formulaire.php' ; ?>
-          
-           
             <!-- footer -->
             <?php include 'includes/footer.php' ; ?>
 
