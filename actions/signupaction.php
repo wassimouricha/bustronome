@@ -10,7 +10,7 @@ C :   le controlleur , il va controller toute les données , le controlleur va a
 <!-- ici le code on va l'inclure dans page_de_connexion -->
 <?php
 
-require ('actions/database.php') ;
+require ('actions/database.php') ; //quand il inclut la databse il inclut également la sessionstart
 
 // je vais vérifier si l'utilisateur clique bien sur le bouton
 if(isset($_POST['validate'])){
@@ -28,7 +28,24 @@ if(isset($_POST['validate'])){
         $checkIfUserAlreadyExists->execute(array($user_pseudo));
 
         if($checkIfUserAlreadyExists->rowCount() == 0){
-            //code... et message d erreur
+            
+            $insertUserOnWebsite = $bdd->prepare('INSERT INTO users(pseudo, nom, prenom, mdp) VALUES(?, ?, ?, ?)');  //avec les ? on indique combien de champs on veut récuperer
+            $insertUserOnWebsite->execute(array($user_pseudo, $user_lastname, $user_firstname, $user_password));  //on execute le requete en indiquant quelle variable il faut récuperer
+
+            $getInfosOfThisUserReq = $bdd->prepare('SELECT id, pseudo, nom, prenom FROM users WHERE nom = ? AND prenom = ? AND pseudo = ?');
+            $getInfosOfThisUserReq->execute(array( $user_lastname, $user_firstname, $user_pseudo));
+
+            $usersInfos = $getInfosOfThisUserReq->fetch(); //on indique que l'on met toutes les données dans un tableau avec fetch
+
+            //authentification
+            $_SESSION['auth'] = true;
+            $_SESSION['id'] =  $usersInfos['id'];
+            $_SESSION['lastname'] =  $usersInfos['nom'];
+            $_SESSION['firstname'] =  $usersInfos['prenom'];
+            $_SESSION['pseudo'] =  $usersInfos['pseudo'];
+
+
+
         }else{
             $errorMsg = " Veuillez compléter tous les champs....";
         }
