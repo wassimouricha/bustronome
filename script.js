@@ -1,8 +1,8 @@
-$(".container > div:gt(0)").hide();  //script permettant l'animation des fades pour mes slides
+$(".containere > div:gt(0)").hide();  //script permettant l'animation des fades pour mes slides
 
 
 setInterval(function() { 
-  $('.container > div:first')
+  $('.containere > div:first')
   .fadeOut(1000)
   .next()
   .fadeIn(1000)
