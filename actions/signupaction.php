@@ -21,4 +21,4 @@ if(isset($_POST['validate'])){
         $errorMsg = " Veuillez compléter tous les champs....";
     }
 
-}
+};

@@ -236,7 +236,14 @@ position: relative;
 z-index: 10;
 }
 
+.container{
+    z-index: 10;
+    margin-left: 0!important;
+}
 
+.messagus{
+    text-align: center;
+}
  /* progress bar */
 #progress-bar{
  position: absolute;
@@ -285,8 +292,9 @@ z-index: 10;
     top: 0;
      height: 93%;
     width: 100%; 
-    z-index: -1;
+    z-index: 10;
     transition: ease-in-out;
+    flex-direction: column;
    
 }
 

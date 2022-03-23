@@ -1,6 +1,10 @@
+<?php require('actions/signupaction.php');  ?>
+
 <div class="containere">
         
-           <?php
+           <?php 
+
+            if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
 
         <form class="container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                 <div class="mb-3">
