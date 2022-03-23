@@ -18,7 +18,7 @@
            <?php 
 
             if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
-
+  <br> <br>
         <form class="container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Pseudo</label>
@@ -40,6 +40,7 @@
                 </div>
         
                 <button type="submit" class="btn btn-primary" name="validate">S'inscrire</button>
+                <a href="login.php"><p>déjà un compte ? connectez-vous</p></a>
         </form>
     
 

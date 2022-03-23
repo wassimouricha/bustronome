@@ -17,23 +17,24 @@
         
             <?php 
 
-if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
+    if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
+        <br> <br>
+    <form class="container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Pseudo</label>
+            <input type="text" class="form-control" name="pseudo">
+            <div id="emailHelp" class="form-text">Mettez votre pseudo</div>
+        </div>
+    
 
-<form class="container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Pseudo</label>
-        <input type="text" class="form-control" name="pseudo">
-        <div id="emailHelp" class="form-text">Mettez votre pseudo</div>
-    </div>
- 
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" name="password">
+        </div>
 
-    <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
-        <input type="password" class="form-control" name="password">
-    </div>
-
-    <button type="submit" class="btn btn-primary" name="validate">Se connecter</button>
-</form>
+        <button type="submit" class="btn btn-primary" name="validate">Se connecter</button>
+        <a href="page_de_connexion.php"><p>pas de compte ? Inscrivez-vous !</p></a>
+    </form>
 
 
 
