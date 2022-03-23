@@ -40,6 +40,7 @@
                 </div>
         
                 <button type="submit" class="btn btn-primary" name="validate">S'inscrire</button>
+                <br> <br>
                 <a href="login.php"><p>déjà un compte ? connectez-vous</p></a>
         </form>
     

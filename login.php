@@ -6,6 +6,8 @@
 <!-- En tete -->
 <?php include 'includes/head.php' ; ?>
 
+<?php require('actions/loginaction.php'); ?>
+
 <!-- Body -->
 <body class="main">
 
@@ -33,6 +35,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary" name="validate">Se connecter</button>
+        <br> <br>
         <a href="page_de_connexion.php"><p>pas de compte ? Inscrivez-vous !</p></a>
     </form>
 
