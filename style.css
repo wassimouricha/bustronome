@@ -216,7 +216,7 @@ flex-direction: row;
 .droite{
     display: flex;
     font-size: 10px;
-   
+    color: white;
  
     
 }
@@ -227,7 +227,7 @@ flex-direction: row;
         font-size: 10px;
         text-align: right;
         justify-content: end;
-     
+        color: white;
     
 }
 
