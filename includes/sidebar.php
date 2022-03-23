@@ -15,7 +15,7 @@
             </a>
         </li>
         <li class="solou">
-        <a href="Page_de_connexion.html"  class="binks">
+        <a href="page_de_connexion.php"  class="binks">
             <span class="list_name" ><i class='bx bx-star'></i> Connexion <i class='bx bx-star'></i></span>
         </a>
     

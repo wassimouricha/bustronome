@@ -14,10 +14,8 @@
             <?php include 'includes/motflottant.php' ; ?>
             <!-- automatic carousel slider -->
             <?php include 'includes/formulaire.php' ; ?>
-            <!-- Boutton dropped down  -->
-            <?php include 'includes/buttondropped.php' ; ?>
-            <!-- Bulle card text -->
-            <?php include 'includes/cardtext.php' ; ?>
+          
+           
             <!-- footer -->
             <?php include 'includes/footer.php' ; ?>
 
