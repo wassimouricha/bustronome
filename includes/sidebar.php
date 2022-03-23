@@ -1,12 +1,7 @@
 <div class="sidebar">
         <img src="./assets/logo2.png" alt="logo bustronome" class="imagelogo">
         <div class="logo_container">
-       <!-- <div class="logo">
-       
-           <div class="logo_name">  <h1> <i class='bx bx-star'></i> Bustronome  <i class='bx bx-star'></i> </h1>  </div>
-         
-       </div>
-       <i class='bx bx-menu'  id="btn"></i> -->
+     
         </div>
         <ul class="nav">
             <li class="solou" id="golden">

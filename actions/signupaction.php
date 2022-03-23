@@ -9,8 +9,8 @@ C :   le controlleur , il va controller toute les données , le controlleur va a
 
 <!-- ici le code on va l'inclure dans page_de_connexion -->
 <?php
-
-require ('actions/database.php') ; //quand il inclut la databse il inclut également la sessionstart
+session_start();
+require ('actions/database.php'); //quand il inclut la databse il inclut également la sessionstart
 
 // je vais vérifier si l'utilisateur clique bien sur le bouton
 //validation du formulaire
@@ -52,10 +52,10 @@ if(isset($_POST['validate'])){
             $_SESSION['pseudo'] =  $usersInfos['pseudo'];
 
                 //je redirige apres la connexion vers index.php
-            header('location: index.php');
+            header('Location: index.php');
 
         }else{
-            $errorMsg = " Veuillez compléter tous les champs....";
+            $errorMsg = " L'utilisateur existe déjà sur le site !";
         }
 
     }else{
