@@ -26,7 +26,7 @@
           ?>
 
         <li class="solou">
-        <a href="../actions/logaoutaction.php"  class="binks">
+        <a href=" actions/logaoutaction.php"  class="binks">
             <span class="list_name" ><i class='bx bx-star'></i> Deconnexion <i class='bx bx-star'></i></span>
         </a>
     
