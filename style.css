@@ -68,6 +68,10 @@ body{
     width: 50%;
 }
 
+.btn{
+    color: #1a1a1a;
+    background-color: #a09173;
+}
 
 .imagelogo{
     display: flex;
