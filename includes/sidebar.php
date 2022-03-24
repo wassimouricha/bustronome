@@ -9,12 +9,32 @@
                 <span class="list_name"> Réservez Maintenant </span>
             </a>
         </li>
+        <?php 
+        if(!isset($_SESSION['auth'])){
+          ?>
         <li class="solou">
         <a href="login.php"  class="binks">
             <span class="list_name" ><i class='bx bx-star'></i> Connexion <i class='bx bx-star'></i></span>
         </a>
     
         </li>
+        <?php
+        } 
+          ?>
+          <?php 
+        if(isset($_SESSION['auth'])){
+          ?>
+
+        <li class="solou">
+        <a href="../actions/logaoutaction.php"  class="binks">
+            <span class="list_name" ><i class='bx bx-star'></i> Deconnexion <i class='bx bx-star'></i></span>
+        </a>
+    
+        </li>
+
+        <?php
+        } 
+          ?>
             </li>
             <li class="solou">
             <a href="# " class="binks">
