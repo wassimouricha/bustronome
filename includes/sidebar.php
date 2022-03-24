@@ -10,7 +10,7 @@
             </a>
         </li>
         <li class="solou">
-        <a href="page_de_connexion.php"  class="binks">
+        <a href="login.php"  class="binks">
             <span class="list_name" ><i class='bx bx-star'></i> Connexion <i class='bx bx-star'></i></span>
         </a>
     
