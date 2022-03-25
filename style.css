@@ -335,7 +335,13 @@ z-index: 10;
 .listemenud li{
     padding: 10px;
     list-style: none;
+    color: #a09173!important;
     
+}
+
+.listemenud li:hover{
+    background-color: #a09173;
+    color: white!important;
 }
 
 
