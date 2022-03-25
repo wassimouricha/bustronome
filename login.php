@@ -34,9 +34,9 @@
             <input type="password" class="form-control" name="password">
         </div>
 
-        <button type="submit" class="btn btn-primary" name="validate">Se connecter</button>
+        <button type="submit" class="btn btn-dark" name="validate">Se connecter</button>
         <br> <br>
-        <a href="page_de_connexion.php"><p>pas de compte ? Inscrivez-vous !</p></a>
+        <a href="page_de_connexion.php"><p >pas de compte ? Inscrivez-vous !</p></a>
     </form>
 
 

@@ -304,7 +304,15 @@ z-index: 10;
     z-index: 10;
     transition: ease-in-out;
     flex-direction: column;
-   
+   background-color: #1a1a1a;
+}
+
+.container a{
+    color: #a09173;
+}
+
+.container a:hover{
+    color: white;
 }
 
 .containere > div{
