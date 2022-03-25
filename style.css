@@ -306,6 +306,19 @@ z-index: 10;
     flex-direction: column;
    background-color: #1a1a1a;
 }
+.containered{
+  
+    display: flex;
+    position: fixed;
+    left: 280px;
+    top: 0;
+     height: 93%;
+    width: 100%; 
+    z-index: 10;
+    transition: ease-in-out;
+    flex-direction: column;
+   background-color: #1a1a1a;
+}
 
 .container a{
     color: #a09173;
@@ -330,7 +343,22 @@ z-index: 10;
    
 }
 
+.calendriercont{
+    top: 100px;
+    left: 100px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1),
+                inset 10px 10px 10px rgba(0, 0, 0, 1),
+                inset -10px -10px 10px rgba(255, 255, 255, 1);
+     border-radius: 20px;
 
+
+}
 
 /* le bouton paris londre */
 .wrappered{
@@ -390,6 +418,7 @@ z-index: 10;
 @media screen and (max-width: 768px) {
 .motflottantsolo{display: none;}
 .containere{display: none;}
+.containered{display: none;}
 .wrappered{display: none;}
 .containercard{display: none!important;}
 .socialus{
