@@ -5,7 +5,7 @@
         </div>
         <ul class="nav">
             <li class="solou" id="golden">
-            <a href="#" class="binks" id="blackus" >
+            <a href="publish.php" class="binks" id="blackus" >
                 <span class="list_name"> Réservez Maintenant </span>
             </a>
         </li>
