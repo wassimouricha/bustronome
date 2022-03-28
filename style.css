@@ -484,7 +484,7 @@ z-index: 10;
 }
 
 .cardus_content > p:last-of-type{
-    margin-bottom: 0;
+    margin-bottom: 0; 
 }
 
 .card_info{
@@ -510,6 +510,11 @@ z-index: 10;
 .cardus_link:hover{
     text-decoration: underline;
     color: #a09173;
+}
+
+.butonneded{
+    margin: 0 auto;
+    
 }
 
 
