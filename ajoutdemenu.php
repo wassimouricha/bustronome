@@ -3,6 +3,7 @@
 <?php 
 require('actions/securiteaction.php'); 
 require('actions/publishquestionaction.php'); 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +27,7 @@ require('actions/publishquestionaction.php');
                 </ul>
                 <div class="titrecalend">
                   <h1 >
-                    Voici les Menus
+                    Ajouter un Menu
                   </h1>
                   
                 </div>
