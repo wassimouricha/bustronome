@@ -1,7 +1,7 @@
 <?php 
 
 require('actions/mesmenusaction.php');
-require('actions/database.php');     
+   
 ?>
 
 
@@ -54,7 +54,7 @@ require('actions/database.php');
                         while($menus = $getAllTheMenu->fetch()){
                             ?>
                              <div class="cardass">
-                      <img src="" alt="" class="cardus_image">
+                      <img src="./assets/coquille.jpg" alt="" class="cardus_image">
                           <div class="cardus_content">
                             <p> <?php echo $menus['titre'];  ?>  </p>
                             <p> <?php echo $menus['descriptioned'];  ?></p>
