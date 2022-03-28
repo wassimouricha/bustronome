@@ -9,7 +9,7 @@ C :   le controlleur , il va controller toute les données , le controlleur va a
 
 <!-- ici le code on va l'inclure dans page_de_connexion -->
 <?php
-session_start();
+
 require ('actions/database.php'); //quand il inclut la databse il inclut également la sessionstart
 
 // je vais vérifier si l'utilisateur clique bien sur le bouton
