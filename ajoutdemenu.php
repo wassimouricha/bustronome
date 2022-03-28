@@ -1,9 +1,8 @@
 
 
 <?php 
-
-require('actions/publishquestionaction.php'); 
 require('actions/securiteaction.php'); 
+require('actions/publishquestionaction.php'); 
 
 ?>
 <!DOCTYPE html>
@@ -35,7 +34,7 @@ require('actions/securiteaction.php');
              
                    <!-- Test de publication -->
                   
-                            <!-- code pour afficher les messages d'erreur ou de succès dans le html -->
+                            <!-- code pour afficher les messages d'erreur ou de succès dans le -->
                       <?php 
 
                       if(isset($errorMsg)){

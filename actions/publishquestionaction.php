@@ -16,7 +16,7 @@ if(isset($_POST['validate'])){
        $question_id_author = $_SESSION['id'];
        $question_pseudo_author = $_SESSION['pseudo'];
 
-        $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO question(titre, description, contenu, id_auteur, pseudo_auteur, date_publication)VALUES(?, ?, ?, ?, ?, ?,)');
+        $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO questions(titre, description, contenu, id_auteur, pseudo_auteur, date_publication)VALUES(?, ?, ?, ?, ?, ?,)');
         $insertQuestionOnWebsite->execute(
             array(
                 $question_title,  
