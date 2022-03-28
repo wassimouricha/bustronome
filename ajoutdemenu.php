@@ -1,9 +1,9 @@
 
 
 <?php 
-require('actions/securiteaction.php'); 
-require('actions/publishquestionaction.php'); 
 
+require('actions/publishquestionaction.php'); 
+require('actions/securiteaction.php'); 
 ?>
 <!DOCTYPE html>
 <html lang="en">

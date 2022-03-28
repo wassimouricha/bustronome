@@ -1,7 +1,7 @@
 <?php
 
 
-require('database.php');
+require('actions/database.php');
 
 // je vais vérifier si l'utilisateur à bien cliquer sur le bouton publier
 if(isset($_POST['validate'])){
@@ -16,7 +16,7 @@ if(isset($_POST['validate'])){
        $question_pseudo_author = $_SESSION['pseudo'];
       
 
-        $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO questions(titre, descriptioned, contenu, id_auteur, pseudo_auteur)VALUES(?, ?, ?, ?, ?)');
+        $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO menu(titre, descriptioned, contenu, id_auteur, pseudo_auteur)VALUES(?, ?, ?, ?, ?)');
         $insertQuestionOnWebsite->execute(array( $question_title,   $question_description,  $question_content,  $question_id_author,  $question_pseudo_author));
 
             $successMsg = "Votre Menu à bien été publié sur le site !";
