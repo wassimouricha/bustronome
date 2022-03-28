@@ -48,7 +48,7 @@
                       <img src="./assets/coquille.jpg" alt="" class="cardus_image">
                           <div class="cardus_content">
                             <p> Coquille saint jacques miam</p>
-                            <p> Doubles dose de  miam</p>
+                            <p> Triple doses de  miam</p>
                           </div>
                           <div class="card_info">
                             <div>
@@ -60,9 +60,10 @@
                           </div>
                   </div>
                 </div>
-                
+             
+        
+                  <button> <a href="./ajoutdemenu.php">Ajouter un menu</a></button>
 
-       
 
               </div>
          
