@@ -1,6 +1,9 @@
 
 
-<?php require('actions/securiteaction.php'); ?>
+<?php 
+require('actions/securiteaction.php'); 
+require('actions/publishquestionaction.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +50,7 @@
                           </div>
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Contenu du menu</label>
-                              <textarea  class="form-control" name="vontent"></textarea>
+                              <textarea  class="form-control" name="content"></textarea>
                           </div>
 
                   
