@@ -53,7 +53,7 @@ require('actions/publishquestionaction.php');
                           </div>
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Description du menu </label>
-                              <textarea  class="form-control" name="description"> </textarea>
+                              <textarea  class="form-control" name="descriptioned"> </textarea>
                           </div>
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Contenu du menu</label>
