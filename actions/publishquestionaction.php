@@ -28,6 +28,8 @@ if(isset($_POST['validate'])){
                 )
             );
 
+            $successMsg = "Votre Menu à bien été publié sur le site !";
+
     }else{
             $errorMsg = "Veuillez compléter tous les champs";
         }

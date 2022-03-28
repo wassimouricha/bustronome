@@ -1,8 +1,9 @@
 
 
 <?php 
-require('actions/securiteaction.php'); 
+
 require('actions/publishquestionaction.php'); 
+require('actions/securiteaction.php'); 
 
 ?>
 <!DOCTYPE html>
@@ -34,11 +35,17 @@ require('actions/publishquestionaction.php');
              
                    <!-- Test de publication -->
                   
-        
+                            <!-- code pour afficher les messages d'erreur ou de succès dans le html -->
                       <?php 
 
-                      if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
-              <br> <br>
+                      if(isset($errorMsg)){
+                          echo '<p class="messagus">'.$errorMsg.'</p>'; 
+                          } 
+                            elseif(isset($successMsg)){
+                                echo '<p class="messagus">'.$successMsg.'</p>'; 
+                            }
+                          ?>
+                         <br> <br>
                   <form class="container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Titre du menu</label>
