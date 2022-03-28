@@ -17,18 +17,10 @@ if(isset($_POST['validate'])){
        $question_date = date('d/m/Y');
 
         $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO questions(titre, description, contenu, id_auteur, pseudo_auteur, date_publication)VALUES(?, ?, ?, ?, ?, ?,)');
-        $insertQuestionOnWebsite->execute(
-            [
-                $question_title,  
-                $question_description, 
-                $question_content, 
-                $question_id_author, 
-                $question_pseudo_author,  
-                $question_date
-            ]
-            );
+        $insertQuestionOnWebsite->execute(array( $question_title,   $question_description,  $question_content,  $question_id_author,  $question_pseudo_author,   $question_date ));
 
             $successMsg = "Votre Menu à bien été publié sur le site !";
+            header('location: menu.php');
 
     }else{
             $errorMsg = "Veuillez compléter tous les champs";
