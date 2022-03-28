@@ -27,8 +27,41 @@
                   </h1>
                   
                 </div>
+                <!-- mon tableau de carte -->
+                <div class="cardus">
+                  <div class="cardass">
+                      <img src="./assets/coquille.jpg" alt="" class="cardus_image">
+                          <div class="cardus_content">
+                            <p> Coquille saint jacques miam</p>
+                            <p> Doubles dose de  miam</p>
+                          </div>
+                          <div class="card_info">
+                            <div>
+                               <box-icon type='solid' name='like'></box-icon> 310
+                            </div>
+                            <div>
+                              <a href="./" class="cardus_link"> Miam</a>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="cardass">
+                      <img src="./assets/coquille.jpg" alt="" class="cardus_image">
+                          <div class="cardus_content">
+                            <p> Coquille saint jacques miam</p>
+                            <p> Doubles dose de  miam</p>
+                          </div>
+                          <div class="card_info">
+                            <div>
+                               <box-icon type='solid' name='like'></box-icon> 310
+                            </div>
+                            <div>
+                              <a href="./" class="cardus_link"> Miam</a>
+                            </div>
+                          </div>
+                  </div>
+                </div>
                 
-    
+
        
 
               </div>

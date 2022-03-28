@@ -453,6 +453,64 @@ z-index: 10;
     z-index: 15;
 }
 
+/* cartes */
+.cardus{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    /* en dessous on indique les parametres de sa grille */
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 20px;
+}
+
+.cardass{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) ;
+}
+
+.cardus_image{
+    width: 100%;
+    display: block;
+}
+
+.cardus_content{
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: white;
+}
+
+.cardus_content > p:first-of-type{
+    margin-top: 0;
+}
+
+.cardus_content > p:last-of-type{
+    margin-bottom: 0;
+}
+
+.card_info{
+    padding:15px ;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    
+    font-size: 0.8em;
+    border-bottom: 5px solid #a09173;
+}
+
+.card_info i{
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+
+.cardus_link{
+    color: #a09173 ;
+    text-decoration: none;
+}
+
+.cardus_link:hover{
+    text-decoration: underline;
+    color: #a09173;
+}
 
 
 /* media queries */
