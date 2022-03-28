@@ -32,6 +32,13 @@
     
         </li>
 
+        <li class="solou">
+        <a href=" mes-menu.php"  class="binks">
+            <span class="list_name" ><i class='bx bx-star'></i> Mes menus <i class='bx bx-star'></i></span>
+        </a>
+    
+        </li>
+
         <?php
         } 
           ?>
