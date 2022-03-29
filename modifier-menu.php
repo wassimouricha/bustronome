@@ -2,7 +2,7 @@
 
 <?php 
 
-require('actions/modifiermenuaction.php'); 
+require('actions/getinfomenuaction.php'); 
 require('actions/securiteaction.php'); 
 ?>
 <!DOCTYPE html>
@@ -62,7 +62,7 @@ require('actions/securiteaction.php');
                           </div>
 
                   
-                          <button type="submit" class="btn btn-dark" name="validate">Publier</button>
+                          <button type="submit" class="btn btn-dark" name="validate">Modifier</button>
                      
                   </form>
 
