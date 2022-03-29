@@ -2,7 +2,7 @@
 
 <?php 
 
-require('actions/publishquestionaction.php'); 
+require('actions/modifiermenuaction.php'); 
 require('actions/securiteaction.php'); 
 ?>
 <!DOCTYPE html>
