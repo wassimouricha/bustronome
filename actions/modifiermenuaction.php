@@ -6,8 +6,8 @@ require('actions/database.php');
 if(isset($_GET['id'])  AND !empty($_GET['id'])){
 
     $idofmenu = $_GET['id'];  //je met le get id dans une variable pour éviter de le réecrire
-    //on va venir récuperer l'id et l'id_auteur d'un menu qui se trouve dans la base de donnée menu(sur phpmyadmin) qui possede l'id que l'on a mis dans l'url
-    $checkIfMenuExist = $bdd->prepare('SELECT id, id_auteur FROM menu WHERE id = ?');
+    //on va venir récuperer l'id et l'id_auteur  ( ou avec l'étoile récuperer totues les données )d'un menu qui se trouve dans la base de donnée menu(sur phpmyadmin) qui possede l'id que l'on a mis dans l'url
+    $checkIfMenuExist = $bdd->prepare('SELECT * FROM menu WHERE id = ?');
     $checkIfMenuExist->execute(array($idofmenu));
 
     //rowcount nous permet de compter le nombre de donéne récuperer par cette requete
@@ -19,6 +19,13 @@ if(isset($_GET['id'])  AND !empty($_GET['id'])){
         $menuInfo = $checkIfMenuExist->fetch();
          // is l'id auteur est le meme que l'id de l'auteur la session qui est connectée et bien on pourra exectuer le code
         if($menuInfo['id_auteur'] == $_SESSION['id']){
+
+            $titremenu = $menuInfo['titre'];
+            $descriptionmenu = $menuInfo['descriptioned'];
+            $contentmenu = $menuInfo['content'];
+            $datemenu = $menuInfo['date_publication'];
+
+            
 
 
         }else{

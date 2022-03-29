@@ -66,6 +66,7 @@ require('actions/mesmenusaction.php');
                             </div>
                             <div>
                               <a href="./" class="cardus_link"> Modifier</a>
+                              <a href="./" class="cardus_link"> Supprimer</a>
                             </div>
                           </div>
                   </div>

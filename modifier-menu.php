@@ -35,17 +35,18 @@ require('actions/securiteaction.php');
                    <!-- Test de publication -->
                   
                             <!-- code pour afficher les messages d'erreur ou de succès dans le -->
-                      <?php 
+                      <?php if(isset($errorMsg)){ 
+                            echo '<p class="messagus">'.$errorMsg.'</p>'; 
+                            } 
+                            ?>
 
-                      if(isset($errorMsg)){
-                          echo '<p class="messagus">'.$errorMsg.'</p>'; 
-                          } 
-                            elseif(isset($successMsg)){
-                                echo '<p class="messagus">'.$successMsg.'</p>'; 
-                            }
-                          ?>
                          <br> <br>
-                  <form class="container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
+
+                            <?php 
+
+                                if(isset($datemenu)){
+                                    ?>
+                                     <form class="container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Titre du menu</label>
                               <input type="text" class="form-control" name="title">
@@ -64,6 +65,13 @@ require('actions/securiteaction.php');
                           <button type="submit" class="btn btn-dark" name="validate">Publier</button>
                      
                   </form>
+
+                                        <?php
+
+                                        
+                                }
+                            ?>
+                        
               
 
     
