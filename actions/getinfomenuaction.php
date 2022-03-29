@@ -1,5 +1,5 @@
 <?php
-
+require('actions/securiteaction.php');
 require('actions/database.php');
 // if isset permet de demander si la variable est déclaré, la methode $_GET sert a récuperer les données de l'url
 // donc si vous voulez modifier un menu dans l'url de la page modifier-menu.php vous ajouter ?id= puis le numéro de l'id du menu que vous voulez modifier
@@ -23,7 +23,7 @@ if(isset($_GET['id'])  AND !empty($_GET['id'])){
             $titremenu = $menuInfo['titre'];
             $descriptionmenu = $menuInfo['descriptioned'];
             $contentmenu = $menuInfo['content'];
-            $datemenu = $menuInfo['date_publication'];
+            
 
             
 
@@ -37,5 +37,5 @@ if(isset($_GET['id'])  AND !empty($_GET['id'])){
     }
 
 }else{
-    $errorMsg = "Aucun menu n'a été trouvé !" ;
+    $errorMsg = "Aucun menu n'a été trouvé ! veuillez taper dans l'url l'id du menu avec ?id= " ;
 }

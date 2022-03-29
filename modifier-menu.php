@@ -1,9 +1,9 @@
 
 
 <?php 
-
 require('actions/getinfomenuaction.php'); 
-require('actions/securiteaction.php'); 
+require('actions/editmenuaction.php'); 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,21 +44,22 @@ require('actions/securiteaction.php');
 
                             <?php 
 
-                                if(isset($datemenu)){
+                                if(isset($contentmenu)){
+
                                     ?>
                                      <form class="container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Titre du menu</label>
-                              <input type="text" class="form-control" name="title">
+                              <input type="text" class="form-control" name="title" value="<?= $titremenu; ?> ">
 
                           </div>
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Description du menu </label>
-                              <textarea  class="form-control" name="descriptioned"> </textarea>
+                              <textarea  class="form-control" name="descriptioned"> <?= $descriptionmenu; ?> </textarea>
                           </div>
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Contenu du menu</label>
-                              <textarea  class="form-control" name="content"></textarea>
+                              <textarea  class="form-control" name="content" > <?= $contentmenu; ?></textarea>
                           </div>
 
                   
