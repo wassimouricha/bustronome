@@ -65,7 +65,7 @@ require('actions/mesmenusaction.php');
                                <box-icon type='solid' name='like'></box-icon> 310
                             </div>
                             <div>
-                              <a href="./" class="cardus_link"> Miam</a>
+                              <a href="./" class="cardus_link"> Modifier</a>
                             </div>
                           </div>
                   </div>

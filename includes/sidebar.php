@@ -1,5 +1,6 @@
 <div class="sidebar">
-        <img src="./assets/logo2.png" alt="logo bustronome" class="imagelogo">
+        
+        <a href="index.php"><img src="./assets/logo2.png" alt="logo bustronome" class="imagelogo" ></a>
         <div class="logo_container">
      
         </div>
