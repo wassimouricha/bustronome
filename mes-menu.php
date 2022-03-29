@@ -65,7 +65,7 @@ require('actions/mesmenusaction.php');
                                <box-icon type='solid' name='like'></box-icon> 310
                             </div>
                             <div>
-                              <a href="modifier-menu.php" class="cardus_link"> Modifier</a>
+                              <a href="modifier-menu.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Modifier</a>
                               <a href="./" class="cardus_link"> Supprimer</a>
                             </div>
                           </div>
