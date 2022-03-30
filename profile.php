@@ -35,7 +35,24 @@ require('actions/showoneuserprofilaction.php');
                 </div>
 
                 <?php 
-            if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
+            if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; } 
+            
+            if(isset($gethismenu)){
+                ?>
+
+                <div class="cardus">
+                    <div class="cardass">
+                    <div class="cardus_content">
+                        <h4 ><?= $userpseudo; ?></h4>
+                        <p ><?= $usernom; ?> <?= $userprenom; ?> </p>
+                        </div>
+                    </div>
+                </div>
+                <?php
+
+            }
+            
+            ?>
 
               
 

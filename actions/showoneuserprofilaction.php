@@ -17,7 +17,7 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
                 $userinfo = $checkifuserexist->fetch();
 
                 $userpseudo = $userinfo['pseudo'];
-                $username = $userinfo['nom'];
+                $usernom = $userinfo['nom'];
                 $userprenom = $userinfo['prenom'];
 
                 //recuperer tout les menu de l'utilisateur 
