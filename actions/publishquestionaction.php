@@ -22,7 +22,7 @@ if(isset($_POST['validate'])){
         $insertQuestionOnWebsite->execute(array( $question_title,   $question_description,  $question_content,  $question_id_author,  $question_pseudo_author,  $question_date));
 
             $successMsg = "Votre Menu à bien été publié sur le site !";
-            header('location: menu.php');
+            header('location: mes-menu.php');
 
     }else{
             $errorMsg = "Veuillez compléter tous les champs";
