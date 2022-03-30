@@ -1,6 +1,7 @@
 <?php 
 require('actions/securiteaction.php');
 require('actions/mesmenusaction.php');
+require('actions/supprimermenuaction.php');
    
 ?>
 
@@ -66,7 +67,7 @@ require('actions/mesmenusaction.php');
                             </div>
                             <div>
                               <a href="modifier-menu.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Modifier</a>
-                              <a href="supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Supprimer</a>
+                              <a href="actions/supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Supprimer</a>
                             </div>
                           </div>
                   </div>
