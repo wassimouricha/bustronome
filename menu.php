@@ -1,4 +1,6 @@
-<?php session_start() ?>
+<?php session_start(); 
+require('actions/mesmenusaction.php');
+?>
 
 
 <!DOCTYPE html>
@@ -59,6 +61,33 @@
                             </div>
                           </div>
                   </div>
+
+                  <?php 
+                        while($menus = $getAllTheMenu->fetch()){
+                            ?>
+                             <div class="cardass">
+                      <img src="./assets/coquille.jpg" alt="" class="cardus_image">
+                          <div class="cardus_content">
+                            <p> <?php echo $menus['titre'];  ?>  </p>
+                            <p> <?php echo $menus['descriptioned'];  ?></p>
+                            <p> <?php echo $menus['content'];  ?></p>
+                          </div>
+                          <div class="card_info">
+                            <div>
+                               <box-icon type='solid' name='like'></box-icon> 310
+                            </div>
+                            <div>
+                              <a href="modifier-menu.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Modifier</a>
+                              <a href="actions/supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Supprimer</a>
+                            </div>
+                          </div>
+                  </div>
+                             <?php 
+                        }
+                  
+                  ?>
+
+                      
                 </div>
                 <br> 
                       <div class="butonneded" >
