@@ -66,7 +66,7 @@ require('actions/mesmenusaction.php');
                             </div>
                             <div>
                               <a href="modifier-menu.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Modifier</a>
-                              <a href="./" class="cardus_link"> Supprimer</a>
+                              <a href="supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Supprimer</a>
                             </div>
                           </div>
                   </div>
@@ -75,9 +75,16 @@ require('actions/mesmenusaction.php');
                   
                   ?>
 
+                      
 
                 </div>
-          
+
+                <br>
+                <div class="butonneded" >
+
+<a href="./ajoutdemenu.php" class="btn btn-dark" >Ajouter un menu</a>
+
+</div>
                                         
                
 

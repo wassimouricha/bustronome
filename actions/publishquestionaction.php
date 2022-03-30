@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+require('actions/securiteaction.php'); 
 require('actions/database.php');
 
 
