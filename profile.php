@@ -43,10 +43,37 @@ require('actions/showoneuserprofilaction.php');
                 <div class="cardus">
                     <div class="cardass">
                     <div class="cardus_content">
-                        <h4 ><?= $userpseudo; ?></h4>
-                        <p ><?= $usernom; ?> <?= $userprenom; ?> </p>
+                        <h4 >Pseudo : <?= $userpseudo; ?></h4>
+                        <p >Nom : <?= $usernom; ?>  <br>Prénom : <?= $userprenom; ?> </p>
                         </div>
                     </div>
+
+                    <?php 
+                        while($menu = $gethismenu->fetch()){
+                            ?>
+                                        <div class="cardass">
+                      <img src="./assets/coquille.jpg" alt="" class="cardus_image">
+                          <div class="cardus_content">
+                            <p> <?=  $menu['titre'];  ?>  </p>
+                            <p> <?= $menu['descriptioned'];  ?></p>
+                            <p> <?= $menu['content'];  ?></p>
+                          </div>
+                          <div class="card_info">
+                            <div>
+                               Auteur du menu : <?= $userpseudo; ?>
+                               <br>
+                               publié le :  <?= $menu['date_publication'];  ?>
+                            </div>
+                            
+                          </div>
+                  </div>
+
+                            <?php
+
+                        }
+                    
+                    ?>
+                    
                 </div>
                 <?php
 

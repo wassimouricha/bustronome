@@ -7,7 +7,7 @@
         <ul class="nav">
             <li class="solou" id="golden">
             <a href="reservation.php" class="binks" id="blackus" >
-                <span class="list_name"> <i class='bx bx-star'></i>Réservez Maintenant <i class='bx bx-star'></i></span>
+                <span class="list_name"><i class='bx bx-star'></i> Réservez Maintenant <i class='bx bx-star'></i></span>
             </a>
         </li>
         <?php 
@@ -28,7 +28,7 @@
 
         <li class="solou">
         <a href=" actions/logaoutaction.php"  class="binks">
-            <span class="list_name" ><i class='bx bx-star'></i> Deconnexion <i class='bx bx-star'></i></span>
+            <span class="list_name" > Deconnexion </span>
         </a>
     
         </li>
@@ -41,8 +41,8 @@
         </li>
 
         <li class="solou">
-        <a href=" profile.php"  class="binks">
-            <span class="list_name" > Mon profil </span>
+        <a href=" profile.php?id=<?= $_SESSION['id']; ?>"  class="binks">
+            <span class="list_name" > Mon Profil </span>
         </a>
     
         </li>
