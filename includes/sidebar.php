@@ -7,7 +7,7 @@
         <ul class="nav">
             <li class="solou" id="golden">
             <a href="reservation.php" class="binks" id="blackus" >
-                <span class="list_name"> Réservez Maintenant </span>
+                <span class="list_name"> <i class='bx bx-star'></i>Réservez Maintenant <i class='bx bx-star'></i></span>
             </a>
         </li>
         <?php 
@@ -35,7 +35,14 @@
 
         <li class="solou">
         <a href=" mes-menu.php"  class="binks">
-            <span class="list_name" ><i class='bx bx-star'></i> Mes menus <i class='bx bx-star'></i></span>
+            <span class="list_name" > Mes menus </span>
+        </a>
+    
+        </li>
+
+        <li class="solou">
+        <a href=" profile.php"  class="binks">
+            <span class="list_name" > Mon profil </span>
         </a>
     
         </li>
@@ -46,7 +53,7 @@
             </li>
             <li class="solou">
             <a href="# " class="binks">
-                <span class="list_name"><i class='bx bx-star'></i> Carte Cadeau <i class='bx bx-star'></i></span>
+                <span class="list_name"> Carte Cadeau </span>
             </a>
         
             </li>
