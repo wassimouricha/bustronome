@@ -42,6 +42,7 @@ require('actions/showoneuserprofilaction.php');
 
                 <div class="cardus">
                     <div class="cardass">
+                    <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode($userinfo['binu']) . '" />'; ?>
                     <div class="cardus_content">
                         <h4 >Pseudo : <?= $userpseudo; ?></h4>
                         <p >Nom : <?= $usernom; ?>  <br>Prénom : <?= $userprenom; ?> </p>

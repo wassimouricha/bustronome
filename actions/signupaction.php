@@ -24,6 +24,7 @@ if(isset($_POST['validate'])){
         $user_pseudo = htmlspecialchars($_POST['pseudo']);
         $user_lastname = htmlspecialchars($_POST['lastname']);
         $user_firstname = htmlspecialchars($_POST['firstname']);
+        $user_pic = file_get_contents($_FILES['binu']['tmp_name']); 
         $user_password = password_hash($_POST['password'], PASSWORD_DEFAULT);  //j'indique avec password hash que je vais crypter le mot de passe, 
         //il prend deux parametres le champs de base de donnée password et ensuite le type de cryptage
 
@@ -35,12 +36,12 @@ if(isset($_POST['validate'])){
         if($checkIfUserAlreadyExists->rowCount() == 0){
 
             //inserer l'utilisateur dans le bdd
-            $insertUserOnWebsite = $bdd->prepare('INSERT INTO users(pseudo, nom, prenom, mdp) VALUES(?, ?, ?, ?)');  //avec les ? on indique combien de champs on veut récuperer
-            $insertUserOnWebsite->execute(array($user_pseudo, $user_lastname, $user_firstname, $user_password));  //on execute le requete en indiquant quelle variable il faut récuperer
+            $insertUserOnWebsite = $bdd->prepare('INSERT INTO users(pseudo, nom, prenom, mdp, binu) VALUES(?, ?, ?, ?, ?)');  //avec les ? on indique combien de champs on veut récuperer
+            $insertUserOnWebsite->execute(array($user_pseudo, $user_lastname, $user_firstname, $user_password, $user_pic));  //on execute le requete en indiquant quelle variable il faut récuperer
 
                 //recuperer les informations de l'utilisateur
-            $getInfosOfThisUserReq = $bdd->prepare('SELECT id, pseudo, nom, prenom FROM users WHERE nom = ? AND prenom = ? AND pseudo = ?');
-            $getInfosOfThisUserReq->execute(array( $user_lastname, $user_firstname, $user_pseudo));
+            $getInfosOfThisUserReq = $bdd->prepare('SELECT id, pseudo, nom, prenom, binu FROM users WHERE nom = ? AND prenom = ? AND pseudo = ?  AND binu = ?');
+            $getInfosOfThisUserReq->execute(array( $user_lastname, $user_firstname, $user_pseudo,  $user_pic));
 
             $usersInfos = $getInfosOfThisUserReq->fetch(); //on indique que l'on met toutes les données dans un tableau avec fetch
 
@@ -50,6 +51,7 @@ if(isset($_POST['validate'])){
             $_SESSION['lastname'] =  $usersInfos['nom'];
             $_SESSION['firstname'] =  $usersInfos['prenom'];
             $_SESSION['pseudo'] =  $usersInfos['pseudo'];
+            $_SESSION['binu'] =  $usersInfos['binu'];
 
                 //je redirige apres la connexion vers index.php
             header('Location: index.php');

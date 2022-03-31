@@ -19,7 +19,7 @@
 
             if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
   <br> <br>
-        <form class="container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
+        <form class="container" method="POST"  enctype="multipart/form-data"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Pseudo</label>
                     <input type="text" class="form-control" name="pseudo">
@@ -33,6 +33,11 @@
                     <label for="exampleInputEmail1" class="form-label">Prénom</label>
                     <input type="text" class="form-control" name="firstname">
                 </div>
+                <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Choisissez votre photo</label>
+                          <br>
+                            <input type="file"  name="binu" id="upload">
+                          </div>
 
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
