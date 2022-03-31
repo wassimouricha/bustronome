@@ -23,7 +23,7 @@ if(isset($_GET['id'])  AND !empty($_GET['id'])){
             $titremenu = $menuInfo['titre'];
             $descriptionmenu = $menuInfo['descriptioned'];
             $contentmenu = $menuInfo['content'];
-            $imagemenu = $menuInfo['image'];
+            $imagemenu = $menuInfo['bin'];
             
 
             

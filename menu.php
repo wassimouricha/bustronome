@@ -66,7 +66,7 @@ require('actions/mesmenusaction.php');
                         while($menus = $getAllTheMenu->fetch()){
                             ?>
                              <div class="cardass">
-                             <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $menus['image'] ) . '" />'; ?>
+                             <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $menus['bin'] ) . '" />'; ?>
                           <div class="cardus_content">
                             <p> <?php echo $menus['titre'];  ?>  </p>
                             <p> <?php echo $menus['descriptioned'];  ?></p>
