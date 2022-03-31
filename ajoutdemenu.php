@@ -59,6 +59,11 @@ require('actions/publishquestionaction.php');
                               <label for="exampleInputEmail1" class="form-label">Contenu du menu</label>
                               <textarea  class="form-control" name="content"></textarea>
                           </div>
+                          <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Choisissez votre photo</label>
+                          <br>
+                            <input type="file">
+                          </div>
 
                   
                           <button type="submit" class="btn btn-dark" name="validate">Publier</button>

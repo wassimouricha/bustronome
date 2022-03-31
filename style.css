@@ -159,6 +159,7 @@ margin-top: 20px;
     display: flex;
     flex-direction: row;
     position: relative;
+    z-index: 10;
     
 
 }
@@ -310,6 +311,7 @@ z-index: 10;
     transition: ease-in-out;
     flex-direction: column;
    background-color: #1a1a1a;
+  
 }
 .containered{
   
@@ -323,6 +325,7 @@ z-index: 10;
     transition: ease-in-out;
     flex-direction: column;
    background-color: #1a1a1a;
+   overflow-y: scroll;
 }
 
 .containered ul li {
