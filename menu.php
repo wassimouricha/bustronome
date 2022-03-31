@@ -73,9 +73,7 @@ require('actions/allmenuaction.php');
                             <p> <?php echo $menus['content'];  ?></p>
                           </div>
                           <div class="card_info">
-                            <div>
-                               <box-icon type='solid' name='like'></box-icon> 310
-                            </div>
+                           
                             
                             <?php
 
