@@ -30,7 +30,7 @@ if(isset($_GET['id'])  AND !empty($_GET['id'])){
 
 
         }else{
-            $errorMsg = "Vous n'etes pas l'auteur de cette question et donc vous n'avez pas le droit de la modifier" ;
+            $errorMsg = "Vous n'etes pas l'auteur de ce menu et donc vous n'avez pas le droit de la modifier" ;
         }
 
     }else{

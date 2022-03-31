@@ -76,10 +76,20 @@ require('actions/allmenuaction.php');
                             <div>
                                <box-icon type='solid' name='like'></box-icon> 310
                             </div>
+                            
+                            <?php
+
+                            if(isset($_SESSION['auth'])){
+                              ?>
+
                             <div>
                               <a href="modifier-menu.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Modifier</a>
-                              <a href="actions/supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Supprimer</a>
+                             
                             </div>
+                              <?php
+                          }
+
+                                ?>
                           </div>
                   </div>
                              <?php 

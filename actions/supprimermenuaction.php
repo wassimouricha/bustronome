@@ -20,7 +20,7 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
     if($checkifmenuexist->rowCount() > 0){
             //avec cette variable et la methode fetch ça va me permettre de récuperer toutes les données lors de la requete
         $userinfo = $checkifmenuexist->fetch();
-            if($userinfo['id_auteur' == $_SESSION['id']]){
+            if($userinfo[['id_auteur'] == $_SESSION['id']]){
                     //on dit de supprimer un menu dans la table menu qui possede l'id de l'identifiant de notre menu ($idofthemenu qui est passé dans l'url)
                 $deletethismenu = $bdd->prepare('DELETE FROM menu WHERE id = ?');
                 $deletethismenu->execute(array($idofthemenu));
