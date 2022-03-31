@@ -51,8 +51,8 @@ require('actions/showoneuserprofilaction.php');
                     <?php 
                         while($menu = $gethismenu->fetch()){
                             ?>
-                                        <div class="cardass">
-                      <img src="./assets/coquille.jpg" alt="" class="cardus_image">
+                         <div class="cardass">
+                      <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $menu['image'] ) . '" />'; ?>
                           <div class="cardus_content">
                             <p> <?=  $menu['titre'];  ?>  </p>
                             <p> <?= $menu['descriptioned'];  ?></p>
