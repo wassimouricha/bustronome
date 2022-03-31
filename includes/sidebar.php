@@ -88,6 +88,12 @@
           
             </li>
             <li class="solou">
+            <a href="allprofile.php" class="binks">
+                <span class="list_name"> Les profils </span>
+            </a>
+          
+            </li>
+            <li class="solou">
             <a href="#" class="binks">
                 <span class="list_name"> Photos et videos </span>
             </a>
