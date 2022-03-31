@@ -4,4 +4,4 @@
 
 require('actions/database.php');
 
-$getAllTheProfile = $bdd->query('SELECT id, pseudo, nom, prenom, bin FROM users  ORDER BY id DESC');
+$getAllTheProfile = $bdd->query('SELECT id, pseudo, nom, prenom, binu FROM users  ORDER BY id DESC');

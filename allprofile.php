@@ -1,9 +1,6 @@
-<?php 
-session_start();
+<?php session_start(); 
 require('actions/showalluserprofilaction.php');
-   
 ?>
-
 
 
 <!DOCTYPE html>
@@ -21,43 +18,42 @@ require('actions/showalluserprofilaction.php');
             <?php include 'includes/sidebar.php' ; ?>
            
             <div class="containered">
-                
                 <ul class="listemenud">
-                 <li> <a href="profile.php"> <i class="fa-solid fa-calendar"> <span> Mon Profil </span>  </i></a>  </li>
-               
+                 <li> <a href="reservation.php"> <i class="fa-solid fa-calendar"> <span> Date & Heure </span>  </i></a>  </li>
+                 <li> <a href="menu.php"> <i class="fa-solid fa-calendar"> <span> Menu </span>  </i></a>  </li>
+                 <li> <i class="fa-solid fa-calendar"> <span> Option </span>  </i> </li>
                 </ul>
-              
                 <div class="titrecalend">
                   <h1 >
-                    Voici Mon Profil
+                    Voici les Profils
                   </h1>
-               
+                  
                 </div>
-
-                <?php 
-            if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; } 
-            
-            if(isset($$getAllTheProfile)){
-                ?>
-
+                <!-- mon tableau de carte -->
                 <div class="cardus">
-                    <div class="cardass">
-                    <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode($userinfo['binu']) . '" />'; ?>
-                    <div class="cardus_content">
-                        <h4 >Pseudo : <?= $userpseudo; ?></h4>
-                        <p >Nom : <?= $usernom; ?>  <br>Prénom : <?= $userprenom; ?> </p>
-                        </div>
-                    </div>
+                 
+                  <?php 
+                        while($ausers = $getAllTheProfile->fetch()){
+                            ?>
+                             <div class="cardass">
+                             <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $ausers['binu'] ) . '" />'; ?>
+                          <div class="cardus_content">
+                            <p> <?php echo $ausers['pseudo'];  ?>  </p>
+                            <p> <?php echo $ausers['nom'];  ?></p>
+                            <p> <?php echo $ausers['prenom'];  ?></p>
+                          </div>
+                        
+                  </div>
+                             <?php 
+                        }
+                  
+                  ?>
 
-                    
+                      
                 </div>
-                <?php
+                         
+               
 
-            }
-            
-            ?>
-
-              
 
               </div>
          
