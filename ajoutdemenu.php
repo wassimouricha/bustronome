@@ -62,7 +62,7 @@ require('actions/publishquestionaction.php');
                           <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Choisissez votre photo</label>
                           <br>
-                            <input type="file"  name="bin">
+                            <input type="file"  name="bin" id="upload">
                           </div>
 
                   

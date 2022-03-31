@@ -62,13 +62,13 @@ require('actions/editmenuaction.php');
                               <textarea  class="form-control" name="content" > <?= $contentmenu; ?></textarea>
                           </div>
                           <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Choisissez votre photo</label>
+                          <label for="exampleInputEmail1" class="form-label" >Choisissez votre photo</label>
                           <br>
-                            <input type="file"  name="bin">
+                            <input type="file"  name="bin" id="upload">
                           </div>
 
                   
-                          <button type="submit" class="btn btn-dark" name="validate">Modifier</button>
+                          <button type="submit" class="btn btn-dark" name="validate" id="upload">Modifier</button>
                      
                   </form>
 

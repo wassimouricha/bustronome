@@ -410,6 +410,12 @@ z-index: 10;
 
 }
 
+#upload{
+    color: #a09173;
+    
+
+}
+
 /* le bouton paris londre */
 .wrappered{
     display: flex;
