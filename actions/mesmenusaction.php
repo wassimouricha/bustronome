@@ -4,5 +4,5 @@
 
 require('actions/database.php');
 
-$getAllTheMenu = $bdd->prepare('SELECT id, titre, descriptioned, content FROM menu WHERE id_auteur = ? ORDER BY id DESC');
+$getAllTheMenu = $bdd->prepare('SELECT id, titre, descriptioned, content, image FROM menu WHERE id_auteur = ? ORDER BY id DESC');
 $getAllTheMenu->execute(array($_SESSION['id']));

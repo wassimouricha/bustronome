@@ -45,7 +45,7 @@ require('actions/publishquestionaction.php');
                             }
                           ?>
                          <br> <br>
-                  <form class="container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
+                  <form class="container" method="POST" enctype="multipart/form-data"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Titre du menu</label>
                               <input type="text" class="form-control" name="title">
@@ -62,7 +62,7 @@ require('actions/publishquestionaction.php');
                           <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Choisissez votre photo</label>
                           <br>
-                            <input type="file">
+                            <input type="file"  name="image">
                           </div>
 
                   

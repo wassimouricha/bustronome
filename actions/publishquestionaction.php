@@ -16,10 +16,11 @@ if(isset($_POST['validate'])){
        $question_id_author = $_SESSION['id'];
        $question_pseudo_author = $_SESSION['pseudo'];
        $question_date = date('d/m/Y');
+       $question_image = file_get_contents($_FILES['image']['tmp_name']);
       
 
-        $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO menu(titre, descriptioned, content, id_auteur, pseudo_auteur, date_publication	)VALUES(?, ?, ?, ?, ?, ?)');
-        $insertQuestionOnWebsite->execute(array( $question_title,   $question_description,  $question_content,  $question_id_author,  $question_pseudo_author,  $question_date));
+        $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO menu(titre, descriptioned, content, id_auteur, pseudo_auteur, date_publication, image  )VALUES(?, ?, ?, ?, ?, ?, ?)');
+        $insertQuestionOnWebsite->execute(array( $question_title,   $question_description,  $question_content,  $question_id_author,  $question_pseudo_author,  $question_date, $question_image));
 
             $successMsg = "Votre Menu à bien été publié sur le site !";
             header('location: mes-menu.php');
