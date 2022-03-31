@@ -1,6 +1,6 @@
 <?php
 
-//ici on va avec ces requetes prendre les données pour un auteur et les publié dans mes menu.php
+//ici on va avec ces requetes prendre les données pour un auteur et les publié dans  menu.php
 
 require('actions/database.php');
 
