@@ -52,6 +52,9 @@
                 <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une heure:</label>
                     <select name="rhours" id="selecthours">
                             <option  name="rhours" value="12h15"><p>12:15</p></option>
+                            <option  name="rhours" value="12h15"><p>12:30</p></option>
+                            <option  name="rhours" value="12h15"><p>12:45</p></option>
+                            <option  name="rhours" value="12h15"><p>13:00</p></option>
                             <option  name="rhours" value="19h45">19:45</option>
                             <option  name="rhours" value="20h45">20:45</option>
                         </select>
