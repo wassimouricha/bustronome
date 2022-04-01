@@ -1,4 +1,6 @@
-<?php session_start() ?>
+<?php session_start();
+  require('actions/reservezaction.php');
+?>
 
 
 <!DOCTYPE html>
@@ -27,9 +29,37 @@
                   </h1>
                   
                 </div>
-                <div id="datepicker"></div>
-                
-    
+              
+            <form class="container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nom</label>
+                    <input type="text" class="form-control" name="rname">
+                    
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="text" class="form-control" name="rmail">
+                  
+                </div>
+
+                <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une date:</label>
+                <input type="text"  name="rdate" id="datepicker">    
+                </div>
+            
+                <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une heure:</label>
+                    <select name="rhours" id="selecthours">
+                            <option  name="rhours" value="12h15"><p>12:15</p></option>
+                            <option  name="rhours" value="19h45">19:45</option>
+                            <option  name="rhours" value="20h45">20:45</option>
+                        </select>
+                <input type="submit" name="validate"  value="Reservez">
+                </div>
+            </form>
+
+            
        
 
               </div>
