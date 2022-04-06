@@ -91,6 +91,12 @@
             <a href="allprofile.php" class="binks">
                 <span class="list_name"> Les profils </span>
             </a>
+
+            </li>
+            <li class="solou">
+            <a href="booked.php" class="binks">
+                <span class="list_name"> Les réservations </span>
+            </a>
           
             </li>
             <li class="solou">
