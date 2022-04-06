@@ -60,15 +60,7 @@ require('actions/showallbooked.php');
 
                       
 
-                </div>
-
-                <br>
-                <div class="butonneded" >
-
-<a href="./reservation.php" class="btn btn-dark" >Reserver</a>
-
-</div>
-                                        
+                </div>                             
                
 
 
