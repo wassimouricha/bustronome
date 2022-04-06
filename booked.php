@@ -1,5 +1,5 @@
 <?php 
-
+session_start(); 
 require('actions/showallbooked.php');
 
    

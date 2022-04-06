@@ -36,9 +36,9 @@ require('actions/showalluserprofilaction.php');
                              <div class="cardass">
                              <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $ausers['binu'] ) . '" />'; ?>
                           <div class="cardus_content">
-                            <p> <?php echo $ausers['pseudo'];  ?>  </p>
-                            <p> <?php echo $ausers['nom'];  ?></p>
-                            <p> <?php echo $ausers['prenom'];  ?></p>
+                            <p>Pseudo :  <?php echo $ausers['pseudo'];  ?>  </p>
+                            <p> Nom : <?php echo $ausers['nom'];  ?></p>
+                            <p> Prénom : <?php echo $ausers['prenom'];  ?></p>
                           </div>
                         
                   </div>
