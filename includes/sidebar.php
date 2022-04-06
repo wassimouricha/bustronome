@@ -50,6 +50,39 @@
         <?php
         } 
           ?>
+           <?php 
+        if(!isset($_SESSION['mdp'])){
+          ?>
+        <li class="solou">
+        <a href="loginadmin.php"  class="binks">
+            <span class="list_name" ><i class='bx bx-star'></i> Connexion Admin <i class='bx bx-star'></i></span>
+        </a>
+    
+        </li>
+        <?php
+        } 
+          ?>
+          <?php 
+        if(isset($_SESSION['mdp'])){
+          ?>
+
+        <li class="solou">
+        <a href=" actions/logaoutaction.php"  class="binks">
+            <span class="list_name" > Deconnexion admin </span>
+        </a>
+    
+        </li>
+        <li class="solou">
+            <a href="booked.php" class="binks">
+                <span class="list_name"> Les réservations </span>
+            </a>
+          
+            </li>
+
+      
+        <?php
+        } 
+          ?>
             </li>
             <li class="solou">
             <a href="# " class="binks">
@@ -93,12 +126,7 @@
             </a>
 
             </li>
-            <li class="solou">
-            <a href="booked.php" class="binks">
-                <span class="list_name"> Les réservations </span>
-            </a>
-          
-            </li>
+            
             <li class="solou">
             <a href="#" class="binks">
                 <span class="list_name"> Photos et videos </span>
