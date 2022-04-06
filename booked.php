@@ -65,7 +65,7 @@ require('actions/showallbooked.php');
                 <br>
                 <div class="butonneded" >
 
-<a href="./ajoutdemenu.php" class="btn btn-dark" >Ajouter un menu</a>
+<a href="./reservation.php" class="btn btn-dark" >Reserver</a>
 
 </div>
                                         

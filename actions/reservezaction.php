@@ -23,7 +23,7 @@ if(isset($_POST['validate'])){
 
             $successMsg = "Votre Réservation à bien été publié sur le site !";
 
-            header('location: index.php');
+            header('location: booked.php');
 
     }else{
             $errorMsg = "Veuillez compléter tous les champs";
