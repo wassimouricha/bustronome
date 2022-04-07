@@ -469,7 +469,8 @@ z-index: 10;
 
 /* cartes */
 .cardus{
-    margin: 0 auto;
+    margin:  20px;
+    /* ou 0 auto c'est selon */
     max-width: 1000px;
     display: grid;
     /* en dessous on indique les parametres de sa grille */

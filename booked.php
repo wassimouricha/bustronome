@@ -1,5 +1,6 @@
 <?php 
-session_start(); 
+
+require('actions/securiteadmin.php');
 require('actions/showallbooked.php');
 
    
