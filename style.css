@@ -572,6 +572,51 @@ body{
 text-align: center;
 
 }
+
+
+
+}
+
+
+
+@media screen and (max-width: 768px){
+        .sidebar ul li {
+            height: 20px;
+        }
+        .sidebar ul li a{
+        
+         
+            font-size: 12px;
+            padding: 1px;
+        }
+
+        body{
+            overflow-y: scroll;
+        }
+
+        
+}
+
+@media screen and (min-width: 768px){
+    .sidebar ul li {
+        height: 35px;
+    }
+    .sidebar ul li a{
+        padding: 10px;
+    }
+
+    
+}
+
+@media screen and (min-width: 1440px){
+    .sidebar ul li {
+        height: 50 px;
+    }
+    .sidebar ul li a{
+        padding: 10px;
+    }
+
+    
 }
 
 
