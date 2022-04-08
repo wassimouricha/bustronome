@@ -442,7 +442,7 @@ z-index: 10;
 .containercard{
     
     position: fixed;
-    bottom: 90px;
+    bottom: 152px;
     left: 300px;
     height: 280px;
     width: 700px;
@@ -536,11 +536,30 @@ z-index: 10;
 /* media queries */
 
 @media screen and (max-width: 768px) {
-.motflottantsolo{display: none;}
-.containere{display: none;}
-.containered{display: none;}
-.wrappered{display: none;}
-.containercard{display: none!important;}
+.motflottantsolo{
+    top: 800px;
+    left: 0;
+}
+.containere{
+    position: relative;
+    
+    left: 0;
+
+}
+.containered{
+    left: 0;
+    }
+.wrappered{
+    
+    position: absolute;
+    top: 750px;
+}
+.containercard{
+    left: 10px;
+    position: absolute;
+    top: 1305px;
+    width: 500px;
+}
 .socialus{
     display: block;
   
@@ -578,6 +597,27 @@ text-align: center;
 
 }
 
+@media screen and (max-width: 521px){
+ 
+    .containercard{
+        
+        position: absolute;
+        height: 220px;
+        width: 300px;
+        top: 1205px;
+    }
+
+    .containercard h1{
+        font-size: 10px;
+    }
+
+    .containere{
+        height: 700px!important;
+    }
+
+    
+}
+
 
 
 @media screen and (max-width: 768px){
@@ -594,7 +634,17 @@ text-align: center;
         body{
             overflow-y: scroll;
         }
+        .sidebar{
+            height: 741px;
+        }
+        .containere{
+            height: 900px;
+        }
 
+        .containercard{
+        
+           
+        }
         
 }
 
@@ -627,7 +677,7 @@ text-align: center;
     }
     .sidebar ul li a{
         
-        margin-top: 75px;
+        
         font-size: 20px;
     }
      .containercard{
@@ -655,7 +705,7 @@ text-align: center;
      }
      .list_name {
          margin-top: -5px;
-         font-size: 25px;
+         font-size: 20px;
      }
      .coco{
          font-size: 20px;
